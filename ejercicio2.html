@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+</head>
+
+<body>
+    <table>
+        <fieldset>
+            <legend>Your details</legend>
+            <ol>
+                <li><label for="nombre">Nombre:</label>
+                    <input type="text" id="Card number" max="30" required placeholder="First and last name">
+                <li><label for="Email">Email:</label>
+                    <input type="email" required placeholder="example@domain.com">
+                <li><label for="Phone">Phone:</label>
+                    <input type="number" required placeholder="Eg +447500000000">
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivey address</legend>
+            <ol>
+                <li>Address<textarea name="Address" rows="6" cols="30"></textarea>
+                <li><label for="Post code">Post code</label>
+                    <input type="number">
+                <li><label for="Country">Country</label>
+                    <input type="text">
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Card details</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Card type</legend>
+                        <ol>
+                            <li><input type="radio" name="Tipo de tarjeta">VISA</li>
+                            <li><input type="radio" name="Tipo de tarjeta">AmEx</li>
+                            <li><input type="radio" name="Tipo de tarjeta">MasterCard</li>
+                        </ol>
+                    </fieldset>
+                    <ol>
+                        <li><label for="Card number">Card number</label>
+                            <input type="number" id="Card number" min="1" max="3">
+                        <li><label for="security code">security code</label>
+                            <input type="text" required pattern="[\R-10]">
+                        <li><label for="Name on card">Name on card</label>
+                            <input type="text" required placeholder="Exac name as on the card">
+                    </ol>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Buy it!">
+        </fieldset>
+    </table>
+</body>
+
+</html>
